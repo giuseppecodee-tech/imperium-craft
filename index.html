@@ -3,196 +3,233 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Imperium Craft</title>
+  <title>Imperium Craft - Manutenzione</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #020617;
-      color: #e5e7eb;
-      line-height: 1.7;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      background: #020617;
-      border-bottom: 1px solid #1e293b;
-      z-index: 10;
-    }
-    nav a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
     }
     header {
-      padding: 5rem 2rem;
       text-align: center;
+      padding: 80px 20px;
+      background: url('https://images.unsplash.com/photo-1612198188060-c7c2a3b7a0fa') center/cover no-repeat;
     }
-    .logo {
-      font-size: 3.5rem;
-      font-weight: 900;
-      letter-spacing: 2px;
-      color: #38bdf8;
-      margin-bottom: 1.5rem;
+    header .overlay {
+      background: rgba(0,0,0,0.6);
+      padding: 60px 20px;
+    }
+    header img {
+      width: 140px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-weight: 400;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
     }
     .status {
-      background: #7c2d12;
-      padding: 1rem 2rem;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .status span {
       display: inline-block;
-      border-radius: 999px;
-      font-weight: bold;
+      margin-top: 15px;
+      padding: 10px 25px;
+      border-radius: 30px;
+      background: #ff9800;
+      color: #000;
+      font-weight: 600;
     }
-    section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .info {
+    .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      gap: 30px;
+      margin-bottom: 60px;
     }
     .card {
-      background: #020617;
-      border: 1px solid #1e293b;
-      padding: 1.5rem;
-      border-radius: 1rem;
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 30px;
       text-align: center;
+      backdrop-filter: blur(6px);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .card p {
+      font-size: 0.95rem;
+      opacity: 0.9;
     }
     .discord {
       text-align: center;
-      margin-top: 2.5rem;
+      margin-bottom: 80px;
     }
     .discord a {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
+      margin-top: 20px;
+      padding: 15px 35px;
+      border-radius: 40px;
       background: #5865F2;
-      color: white;
-      border-radius: 999px;
+      color: #fff;
       text-decoration: none;
       font-weight: 600;
+      transition: transform 0.2s ease;
     }
-    h1, h2 {
-      color: #38bdf8;
+    .discord a:hover {
+      transform: scale(1.05);
+    }
+    .rules {
+      background: rgba(0,0,0,0.4);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .rules h3 {
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+    .rules pre {
+      white-space: pre-wrap;
+      font-family: inherit;
+      line-height: 1.5;
+      font-size: 0.9rem;
     }
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 30px;
+      opacity: 0.6;
       font-size: 0.85rem;
-      color: #94a3b8;
     }
   </style>
 </head>
 <body>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#regolamento">Regolamento</a>
-</nav>
-
-<header id="home">
-  <div class="logo">IMPERIUM CRAFT</div>
-  <div class="status">⚠️ Server attualmente in manutenzione</div>
+<header>
+  <div class="overlay">
+    <!-- QUI PUOI METTERE IL LOGO -->
+    <img src="imperiumcraft-logo.png" alt="Imperium Craft Logo" />
+    <h1>Imperium Craft</h1>
+    <h2>Server attualmente in manutenzione</h2>
+    <p>Apertura ufficiale: <strong>1 Febbraio</strong></p>
+  </div>
 </header>
 
-<section>
-  <div class="info">
-    <div class="card">🌍<br><strong>Modalità</strong><br>Survival</div>
-    <div class="card">👥<br><strong>Community</strong><br>Italiana</div>
-    <div class="card">🛡️<br><strong>Staff</strong><br>Attivo e disponibile</div>
-  </div>
+<div class="container">
+  <section class="status">
+    <h2>🚧 Lavori in corso</h2>
+    <span>STATO: MANUTENZIONE</span>
+  </section>
 
-  <div class="discord">
-    <p>Discord ufficiale del server</p>
-    <a href="https://discord.gg/9uZZ2xPQav" target="_blank">https://discord.gg/9uZZ2xPQav</a>
-  </div>
-</section>
-
-<section id="regolamento">
-  <h1>📜 Regolamento Ufficiale</h1>
-
-  <h2>📜 Regolamento Discord</h2>
-  <p>
-    1️⃣ Rispetto obbligatorio – Vietati insulti, flame, razzismo, discriminazioni<br>
-    2️⃣ Niente spam – No flood, link inutili o pubblicità senza permesso<br>
-    3️⃣ Linguaggio corretto – Vietato contenuto NSFW<br>
-    4️⃣ Nickname e profilo – Nomi o foto inappropriate = warn<br>
-    5️⃣ Uso dei canali – Ogni canale ha il suo scopo<br>
-    6️⃣ Rispetta lo staff – Le decisioni vanno rispettate
-  </p>
-  <p><strong>⚠️ Punizioni:</strong> Warn → Mute → Kick → Ban</p>
-
-  <h2>⛏️ Regolamento Minecraft</h2>
-  <p>
-    1️⃣ Rispetto – Vietati insulti e discriminazioni<br>
-    2️⃣ Chat – No spam, CAPS o NSFW<br>
-    3️⃣ Nickname e Skin – Vietati contenuti offensivi<br>
-    4️⃣ Cheat e Mod – Vietati hack, x-ray, fly, auto-clicker<br>
-    5️⃣ Griefing e Furti – Vietato griefare o rubare<br>
-    6️⃣ PvP – Solo se consensuale<br>
-    7️⃣ Bug e Exploit – Da segnalare allo staff<br>
-    8️⃣ Claim e Costruzioni – Rispetta i claim altrui
-  </p>
-
-  <p><strong>⚠️ Punizioni:</strong> Warn → Mute → Jail → Ban temporaneo → Ban permanente</p>
-  <p>Entrando nel server accetti automaticamente il regolamento.<br>Lo staff ha sempre l’ultima parola.</p>
-</section>
-
-<section id="shop">
-  <h1>🛒 Shop In‑Game</h1>
-  <p>Acquista i pacchetti usando <strong>i soldi del server</strong>. Tutti gli acquisti sono in‑game.</p>
-
-  <div class="info">
+  <section class="features">
     <div class="card">
-      <h3>VIP Elite</h3>
-      <p><strong>Prezzo:</strong> 2.000.000 💰</p>
+      <h3>🌍 Modalità</h3>
+      <p>Survival puro, bilanciato e coinvolgente</p>
     </div>
     <div class="card">
-      <h3>VIP Pro</h3>
-      <p><strong>Prezzo:</strong> 5.000.000 💰</p>
+      <h3>👥 Community</h3>
+      <p>Community italiana attiva e amichevole</p>
     </div>
     <div class="card">
-      <h3>VIP OG</h3>
-      <p><strong>Prezzo:</strong> 8.000.000 💰</p>
+      <h3>🛡️ Staff</h3>
+      <p>Staff sempre presente, serio e disponibile</p>
     </div>
-  </div>
+  </section>
 
-  <h2>📦 Bundle Speciali</h2>
-  <div class="info">
-    <div class="card">
-      <h3>Bundle Febbraio</h3>
-      <p><strong>Prezzo:</strong> 12.000.000 💰</p>
-      <p>• 10x Chiavi Rare<br>• 5x Chiavi Epiche<br>• 1x Chiave Leggendaria<br>• 25x Key Coins<br>• 🛡️ Scudo Divino</p>
-    </div>
+  <section class="discord">
+    <h2>💬 Unisciti al nostro Discord</h2>
+    <a href="https://discord.gg/9uZZ2xPQav" target="_blank">Entra nel Discord</a>
+  </section>
 
-    <div class="card">
-      <h3>Pacchetto G1usee</h3>
-      <p><strong>Prezzo:</strong> 25.000.000 💰</p>
-      <p>• 10x Chiavi G1usee<br>• 1x Chiave G1usee (5.000.000 💰)<br>• 1x Chiave Roulette (3.000.000 💰)</p>
-    </div>
+  <section class="rules">
+    <h3>📜 Regolamenti Discord & Minecraft</h3>
+    <pre>
+📜 REGOLAMENTO DISCORD
+1️⃣ Rispetto obbligatorio
+• Vietati insulti, flame, razzismo, discriminazioni
+• No minacce o provocazioni
 
-    <div class="card">
-      <h3>Bundle Inverno</h3>
-      <p><strong>Prezzo:</strong> 20.000.000 💰</p>
-      <p>• 10x Chiavi Epiche<br>• 45x Coins<br>• 1x Chiave Roulette<br>• 4x Chiavi Leggendarie</p>
-    </div>
+2️⃣ Niente spam
+• No flood, link inutili o tag di massa
+• Pubblicità vietata senza permesso dello staff
 
-    <div class="card">
-      <h3>Pacchetto Fortuna</h3>
-      <p><strong>Prezzo:</strong> 23.000.000 💰</p>
-      <p>• 10x Chiavi Roulette</p>
-    </div>
-  </div>
+3️⃣ Linguaggio corretto
+• Vietato contenuto NSFW
+• Mantieni un linguaggio adeguato
 
-  <p><strong>ℹ️ Nota:</strong> Gli acquisti vengono effettuati esclusivamente con valuta in‑game.</p>
-</section>
+4️⃣ Nickname e profilo
+• Nomi offensivi o troll verranno cambiati
+• Foto profilo inappropriate = warn
+
+5️⃣ Uso corretto dei canali
+• Usa ogni canale per il suo scopo
+• Fuori tema = warn
+
+6️⃣ Rispetta lo staff
+• Le decisioni dello staff vanno rispettate
+• Abusi → sanzioni
+
+⚠️ Punizioni:
+Warn → Mute → Kick → Ban
+
+──────────────
+
+⛏️ REGOLAMENTO MINECRAFT
+📌 REGOLE GENERALI
+1️⃣ Rispetto
+• Vietati insulti, flame, razzismo, discriminazioni
+• Rispetta tutti i giocatori e lo staff
+
+2️⃣ Chat
+• No spam, flood o CAPS
+• Vietato contenuto NSFW
+• Pubblicità solo con permesso dello staff
+
+3️⃣ Nickname e Skin
+• Vietati nomi o skin offensive/inappropriate
+• Lo staff può chiedere il cambio
+
+📌 REGOLE IN-GAME
+4️⃣ Cheat e Mod
+• Vietati cheat, hack, x-ray, fly, auto-clicker
+• Ammesse solo mod estetiche/di performance
+
+5️⃣ Griefing e Furti
+• Vietato griefare case, claim o strutture
+• Vietato rubare oggetti altrui
+
+6️⃣ PvP
+• PvP solo se CONSENSUALE
+• Vietato spawn kill
+
+7️⃣ Bug e Exploit
+• Vietato sfruttare bug o exploit
+• I bug vanno segnalati allo staff
+
+8️⃣ Claim e Costruzioni
+• Rispetta i claim altrui
+• Vietate costruzioni offensive o lag-machine
+
+⚠️ Warn → Mute → Jail → Ban temporaneo → Ban permanente
+
+Entrando nel server accetti automaticamente il regolamento.
+Lo staff ha sempre l’ultima parola.
+    </pre>
+  </section>
+</div>
 
 <footer>
-  © 2026 · Imperium Craft
+  © 2026 Imperium Craft • Tutti i diritti riservati
 </footer>
 
 </body>
