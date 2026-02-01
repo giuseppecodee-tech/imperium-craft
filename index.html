@@ -9,24 +9,24 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
+      background: radial-gradient(circle at top, #2b1b0e 0%, #0f0a06 70%);
+      color: #f5e6c8;
     }
     header {
       text-align: center;
-      padding: 80px 20px;
-      background: url('https://images.unsplash.com/photo-1612198188060-c7c2a3b7a0fa') center/cover no-repeat;
+      padding: 120px 20px;
+      background: radial-gradient(circle at center, #3a240f 0%, #120a05 70%);
+      border-bottom: 4px solid #b8923c;
     }
     header .overlay {
       background: rgba(0,0,0,0.6);
       padding: 60px 20px;
     }
     header img {
-      width: 420px;
+      width: 480px;
       max-width: 95%;
       height: auto;
-      margin-bottom: 25px;
-      image-rendering: pixelated;
+      margin-bottom: 10px;
     }
     h1 {
       font-size: 3rem;
@@ -61,11 +61,12 @@
       margin-bottom: 60px;
     }
     .card {
-      background: rgba(255,255,255,0.08);
-      border-radius: 20px;
+      background: linear-gradient(180deg, #2a1a0d, #1a1008);
+      border: 2px solid #b8923c;
+      border-radius: 18px;
       padding: 30px;
       text-align: center;
-      backdrop-filter: blur(6px);
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
     }
     .card h3 {
       margin-bottom: 10px;
@@ -82,13 +83,14 @@
     .discord a {
       display: inline-block;
       margin-top: 20px;
-      padding: 15px 35px;
-      border-radius: 40px;
-      background: #5865F2;
-      color: #fff;
+      padding: 15px 40px;
+      border-radius: 8px;
+      background: linear-gradient(180deg, #caa24d, #8b6a2b);
+      color: #1a0f06;
       text-decoration: none;
-      font-weight: 600;
-      transition: transform 0.2s ease;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
     .discord a:hover {
       transform: scale(1.05);
@@ -110,9 +112,11 @@
     }
     footer {
       text-align: center;
-      padding: 30px;
-      opacity: 0.6;
+      padding: 40px;
+      color: #b8923c;
       font-size: 0.85rem;
+      border-top: 2px solid #b8923c;
+      background: #120a05;
     }
   </style>
 </head>
